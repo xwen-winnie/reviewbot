@@ -110,9 +110,9 @@ func main() {
 	logrus.SetLevel(logrus.DebugLevel)
 
 	cfg, err := config.NewConfig(o.config)
-	if err != nil {
-		log.Fatalf("failed to create config: %v", err)
-	}
+	// if err != nil {
+	// 	log.Fatalf("failed to create config: %v", err)
+	// }
 
 	s := &Server{
 		webhookSecret:    []byte(o.webhookSecret),
