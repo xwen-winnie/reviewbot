@@ -20,9 +20,11 @@ import (
 	"errors"
 	"flag"
 	"fmt"
+	// test
 	"net/http"
 	"os"
 
+	// test
 	"github.com/google/go-github/v57/github"
 	"github.com/qiniu/x/log"
 	"github.com/reviewbot/config"
@@ -35,10 +37,11 @@ import (
 )
 
 type options struct {
-	port          int
-	dryRun        bool
-	logLevel      int
-	accessToken   string
+	port        int
+	dryRun      bool
+	logLevel    int
+	accessToken string
+	// test 2
 	webhookSecret string
 	codeCacheDir  string
 	config        string
